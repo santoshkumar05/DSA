@@ -29,7 +29,7 @@ def code3(n):
         print("palindrome")
     else:
         print("not a palindrome")
-# prime or not
+# prime or
 def code4(n):
     count=0
     for i in range(1,n):
@@ -39,5 +39,5 @@ def code4(n):
         print("prime")
     else:
         print("not a prime")          
-#  
+    
 code4(41) 
