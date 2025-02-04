@@ -39,5 +39,28 @@ def code4(n):
         print("prime")
     else:
         print("not a prime")          
-    
-code4(41) 
+# armstrong number
+def code5(n):
+    num=n
+    sum=0
+    while n>0:
+        rem=n%10
+        sum+=rem*rem*rem;
+        n=n//10
+    if sum==num:
+        print(" armstrong number")
+    else:
+        print("not an armstrong number")
+# print all the divisors
+def code6(n):
+    for i in range(1,n+1):
+        if n%i==0:
+            print(i, end=" ")
+#  gcd or hcf of a number
+def code7(n1,n2):
+    gcd=1
+    for i in range(1,min(n1,n2)+1):
+        if(n1%i==0 and n2%i==0):
+            gcd=i
+    print("gcd of the numbers is:",gcd)        
+code7(1,1) 
