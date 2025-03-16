@@ -25,12 +25,12 @@ num(9)
 import numpy as np
 var=[22,4,55,77]
 arr=np.array(var)
-print("original array",arr)
+print("original array:",arr)
 def reverse(arr,start,end):
     if start>=end:
         return 
     arr[start],arr[end] = arr[end],arr[start]
     reverse(arr,start+1,end-1)
 reverse(arr,0,len(arr)-1)
-print("reversed array",arr)
+print("reversed array:",arr)
     
