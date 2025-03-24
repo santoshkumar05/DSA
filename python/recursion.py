@@ -1,6 +1,6 @@
 # recursion - a function call by it self is called recursion.
 # stack over flow - when a function runs infinte times until the stack is full is called the stack over flow.
-def fact(n):
+"""def fact(n):
    if n==0:
     return 1;
    else:
@@ -32,5 +32,12 @@ def reverse(arr,start,end):
     arr[start],arr[end] = arr[end],arr[start]
     reverse(arr,start+1,end-1)
 reverse(arr,0,len(arr)-1)
-print("reversed array:",arr)
-    
+print("reversed array:",arr)"""
+def f(n):
+    if n<=1:
+        return n;
+    else:
+        l= f(n-1);
+        s = f(n-2);
+    print(l + s);
+f(4)
